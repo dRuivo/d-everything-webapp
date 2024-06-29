@@ -5,7 +5,9 @@ import {
   HomeIcon,
   DocumentDuplicateIcon,
 } from '@heroicons/react/24/outline';  // TODO: Import the correct icons from the Heroicons library.
-import Link from 'next/link';	
+import Link from 'next/link';
+import MyLogo from '@/app/ui/logo';
+
 
 // Map of links to display in the side navigation.
 // Depending on the size of the application, this would be stored in a database.
@@ -19,19 +21,22 @@ const links = [
     { name: 'galery', href: '/galery', icon: null },
 ];
 
-export default function NavLinks() {
+export default function NavBar() {
   return (
-    <div className="flex h-full flex-col px-3 py-4 md:px-2">
-      <div className="flex grow flex-row justify-between space-x-2 md:flex-col md:space-x-0 md:space-y-2">
+    <div className="flex top-0 z-10 h-max w-full rounded-none px-4 py-2 justify-between px-32">
+      <div className="flex items-center justify-start text-blue-gray-900">
+        <MyLogo />
+      </div>
+      <div className="flex max-w-full items-center justify-end text-blue-gray-900">
         <>
           {links.map((link) => {
             return (
               <Link 
                 key={link.name} 
                 href={link.href}
-                className="flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3"
+                className='flex items-center justify-center px-4'
               >
-                <p className="hidden md:block">{link.name}</p>
+                <p className="block">{link.name}</p>
               </Link>
             );
           })}
