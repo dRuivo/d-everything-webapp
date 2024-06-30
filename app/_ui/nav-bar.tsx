@@ -19,7 +19,7 @@ const links = [
       icon: null,
     },
     { name: 'poetry', href: '/poetry', icon: null},
-    { name: 'galery', href: '/galery', icon: null },
+    { name: 'gallery', href: '/gallery', icon: null },
 ];
 
 export default function NavBar() {
