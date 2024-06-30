@@ -6,7 +6,7 @@ import {
   DocumentDuplicateIcon,
 } from '@heroicons/react/24/outline';  // TODO: Import the correct icons from the Heroicons library.
 import Link from 'next/link';
-import MyLogo from '@/app/ui/logo';
+import MyLogo from '@/app/_ui/logo';
 
 
 // Map of links to display in the side navigation.
@@ -18,12 +18,13 @@ const links = [
       href: '/blog',
       icon: null,
     },
+    { name: 'poetry', href: '/poetry', icon: null},
     { name: 'galery', href: '/galery', icon: null },
 ];
 
 export default function NavBar() {
   return (
-    <div className="flex top-0 z-10 h-max w-full rounded-none px-4 py-2 justify-between px-32">
+    <div className="flex top-0 z-10 h-max w-full rounded-none py-2 justify-between md:px-32">
       <div className="flex items-center justify-start text-blue-gray-900">
         <MyLogo />
       </div>

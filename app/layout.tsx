@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import { inter } from "@/app/ui/fonts";
+import { inter } from "@/app/_ui/fonts";
 import "./globals.css";
-import NavBar from "@/app/ui/nav-bar";
+import NavBar from "@/app/_ui/nav-bar";
 
 export const metadata: Metadata = {
   title: "dRuivo a Nextjs Adventure",
