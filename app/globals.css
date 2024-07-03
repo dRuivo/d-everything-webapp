@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+h1 {
+  @apply mb-8 text-5xl md:text-7xl font-bold tracking-tighter leading-tight;
+}
+
+h2 {
+  @apply mb-8 text-3xl md:text-5xl font-bold tracking-tighter leading-tight;
+}
+
+h3 {
+  @apply text-2xl;
+}
+
+h4 {
+  @apply text-xl;
+}
+
+h5 {
+  @apply text-lg;
+}
+
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

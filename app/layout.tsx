@@ -4,8 +4,11 @@ import "./globals.css";
 import NavBar from "@/app/_ui/nav-bar";
 
 export const metadata: Metadata = {
-  title: "dRuivo a Nextjs Adventure",
-  description: "My Next.js adventure",
+  title: {
+    template: "%s | dRuivo",
+    default: "dRuivo",
+  },
+  description: "dRuivo a Nextjs Adventure",
 };
 
 export default function RootLayout({
@@ -17,10 +20,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>  
         {/* TODO: select default font */}
-        <div className="flex w-screen p-6">
+        <div className="flex p-6">
           <NavBar />
         </div>
-        <div className="flex-grow p-6 md:overflow-y-auto md:p-12">
+        <div className="flex-grow py-6 md:overflow-y-auto md:px-36 px-6">
           {children}
         </div>
       </body>
