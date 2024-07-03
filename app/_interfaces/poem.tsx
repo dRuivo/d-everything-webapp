@@ -1,6 +1,6 @@
 import { type Author } from "@/app/_interfaces/author";
 
-export type Post = {
+export type Poem = {
   slug: string;
   title: string;
   date: string;
