@@ -1,4 +1,42 @@
+# d-Everything
+
+This is a webapp where I'll drop everything that I want to build.
+
+Currently it contains:
+
+- a Blog
+- a Poetry page
+- a Future Picture Gallery
+
+Eventually it could have:
+
+- Some task tracker
+- Kanban board
+- Roadmap planner
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+## Blog
+
+Some features:
+
+- [x] Page content built from Markdown
+- [ ] Page Metadata from Markdown
+- [ ] Filter by tag
+- [ ] Custom preview cards
+- [ ] some special decoration/looks based on tags
+
+## Poetry
+
+Some features:
+
+- [x] Page content built from Markdown
+- [ ] Page Metadata from Markdown
+- [ ] Filter by tag
+- [ ] Custom preview cards
+- [ ] some special decoration/looks based on tags
+
+# Developing
 
 ## Getting Started
 
