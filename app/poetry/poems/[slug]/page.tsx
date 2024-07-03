@@ -10,14 +10,14 @@ type Params = {
   };
 };
 
-export default async function Post({ params }: Params) {
-  const post = getPoemBySlug(params.slug);
+export default async function Poem({ params }: Params) {
+  const poem = getPoemBySlug(params.slug);
 
-  if (!post) {
+  if (!poem) {
     return notFound();
   }
 
-  const content = await markdownToHtml(post.content || "");
+  const content = await markdownToHtml(poem.content || "");
 
   return (
     <main>
