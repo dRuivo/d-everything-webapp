@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { getPoemBySlug } from "@/app/_lib/api";
+import { getPostBySlug } from "@/app/_lib/api";
 import markdownToHtml from "@/app/_lib/markdownToHtml";
 import markdownStyles from "./markdown-styles.module.css";
 
@@ -11,7 +11,7 @@ type Params = {
 };
 
 export default async function Post({ params }: Params) {
-  const post = getPoemBySlug(params.slug);
+  const post = getPostBySlug(params.slug);
 
   if (!post) {
     return notFound();
@@ -25,6 +25,7 @@ export default async function Post({ params }: Params) {
         className={markdownStyles["markdown"]}
         dangerouslySetInnerHTML={{ __html: content }}
       />
+      {/* <article class="prose prose-slate">{{ post.content }}</article> */}
     </main>
   )
 }
