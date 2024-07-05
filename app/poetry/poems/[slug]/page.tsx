@@ -1,8 +1,9 @@
 import { notFound } from "next/navigation";
-import { getPoemBySlug } from "@/app/_lib/api";
+import { getPoemBySlug, getNextPoem, getPrevPoem } from "@/app/_lib/api";
 import markdownToHtml from "@/app/_lib/markdownToHtml";
 import markdownStyles from "./markdown-styles.module.css";
 import Breadcrumbs from "@/app/_ui/breadcrums";
+import Pagination from "@/app/_ui/pagination";
 
 type Params = {
   params: {
@@ -18,6 +19,11 @@ export default async function Poem({ params }: Params) {
   }
 
   const content = await markdownToHtml(poem.content || "");
+
+  const prev_poem = getPrevPoem(params.slug);
+  const prev = prev_poem ? { slug: "/poetry/poems/" + prev_poem.slug, title: prev_poem.title } : null;
+  const next_poem = getNextPoem(params.slug);
+  const next = next_poem ? { slug: "/poetry/poems/" + next_poem.slug, title: next_poem.title } : null;
 
   return (
     <main className="text-center ">
@@ -40,7 +46,7 @@ export default async function Poem({ params }: Params) {
         <p>{poem.author.name}</p>
         <p>{poem.date}</p>
       </div>
-      {/* TODO: Next and Previous */}
+      <Pagination prev={prev} next={next} />
     </main>
   )
 }

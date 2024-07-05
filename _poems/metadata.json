@@ -1,0 +1,30 @@
+[
+  {
+    "slug": "haiku_tree",
+    "title": "A tree Haiku",
+    "date": "2020-06-26",
+    "author": "dRuivo",
+    "number": 1
+  },
+  {
+    "slug": "birds_chirping",
+    "title": "Birds Chirping",
+    "date": "2020-06-27",
+    "author": "dRuivo",
+    "number": 2
+  },
+  {
+    "slug": "summer_rain",
+    "title": "Summer Rain",
+    "date": "2020-06-27",
+    "author": "dRuivo",
+    "number": 3
+  },
+  {
+    "slug": "silence_night",
+    "title": "Silence of the Night",
+    "date": "2020-06-28",
+    "author": "dRuivo",
+    "number": 4
+  }
+]

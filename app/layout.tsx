@@ -27,7 +27,7 @@ export default function RootLayout({
         <div className="grow py-6 md:px-36 px-6">
           {children}
         </div>
-        <div className="flex-none py-6 md:px-36 px-6 bottom-0">
+        <div className="flex-none py-8 md:px-36 px-6 bottom-0">
           <Footer />  
         </div>
       </body>
