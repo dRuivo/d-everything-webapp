@@ -12,6 +12,7 @@
   "dependencies": {
     "@heroicons/react": "^2.1.4",
     "@tailwindcss/typography": "^0.5.13",
+    "@vercel/speed-insights": "^1.0.12",
     "clsx": "^2.1.1",
     "gray-matter": "^4.0.3",
     "next": "14.2.4",
