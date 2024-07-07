@@ -17,7 +17,7 @@ export default function Page() {
         <p>Feel free to explore my blog and my poetry.</p>
         <p>Thanks for stopping by!</p>
         <div className="py-8"/>
-        <p>If you're looking for my job experience check my <Link href={"/resume"} className="hover:italic underline" >Resume</Link>.</p>
+        <p>If you&apos;re looking for my job experience check my <Link href={"/resume"} className="hover:italic underline" >Resume</Link>.</p>
       </div>
     </main>
   ); 

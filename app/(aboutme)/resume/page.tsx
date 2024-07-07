@@ -18,13 +18,13 @@ export default function Page() {
           I have a background in engineering and a passion for technology, but I am also a maker, a creator and a crafter.
         </p>
         <p>
-          I’ve spent over 8 years working in a tech company that does physical products that require their own software to run. 
+          I&apos;ve spent over 8 years working in a tech company that does physical products that require their own software to run. 
           More than 6 of those years were spent partly doing management, this has given me a set of skills that can help you improve how you work.
         </p>
         <p>
           My background is in engineering, more specifically, I studied mechanical engineering and did a Masters in Robotics. 
-          But more than that I am a maker, creator or crafter (whatever you’d prefer to call it). 
-          I like to build and improve stuff around the house, make some music and I’m now getting into drawing. When it comes to my interests, I am all over the place, and I love it! I consider it one of my super powers!
+          But more than that I am a maker, creator or crafter (whatever you&apos;d prefer to call it). 
+          I like to build and improve stuff around the house, make some music and I&apos;m now getting into drawing. When it comes to my interests, I am all over the place, and I love it! I consider it one of my super powers!
         </p>
         <p>
           I am a generalist, a jack of all trades. 
@@ -35,7 +35,7 @@ export default function Page() {
       <div className='py-8'>
         <h3 className='text-center m-2'>Work Experience</h3>
         <p className='block text-center mb-4'>
-          Here is a timeline of my work experience, including machines I've developed and position changes.
+          Here is a timeline of my work experience, including machines I&apos;ve developed and position changes.
         </p>
         <WorkTimeline />
       </div>
