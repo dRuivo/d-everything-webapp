@@ -1,4 +1,9 @@
+import { Metadata } from 'next';
 import WorkTimeline from './work-timeline';
+
+export const metadata: Metadata = {
+  title: 'Resume',
+};
 
 // Code: Resume page component
 export default function Page() {

@@ -11,14 +11,16 @@ export default function Page() {
 
 
   return (
-    <main>
-      <section>
-        <h1>Welcome to my Blog!</h1>
+    <main className='grid grid-cols-1 justify-items-center'>
+      <h1>Welcome to my Blog!</h1>
+      <section className='space-y-4'>
         <p>Some introductory words.</p>
         <p>This blog serves as a space to showcase my thoughts.</p>
         <p>They may take the form of hardware of software projects, serve to document the mastering of tools or subjects, or be just me blurting out words.</p>
+        <p>Still under construction...</p>
       </section>
-      <section>
+      
+      {/* <section>
         <h2>
           Stories
         </h2>
@@ -29,7 +31,7 @@ export default function Page() {
             </Link>
           ))}
         </div>
-      </section>
+      </section> */}
     </main>
   );
 };

@@ -6,9 +6,11 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <div>
+    <main className='grid grid-cols-1 justify-items-center'>
       <h1>Welcome to the Gallery Page!</h1>
       {/* Add your gallery content here */}
-    </div>
+      <p>Here you can find some of my photos.</p>
+      <p>Eventually.</p>
+    </main>
   );
 };

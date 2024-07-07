@@ -5,6 +5,11 @@ import markdownStyles from "./markdown-styles.module.css";
 import Breadcrumbs from "@/app/_ui/breadcrums";
 import Pagination from "@/app/_ui/pagination";
 import clsx from "clsx";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Poetry',
+};
 
 type Params = {
   params: {

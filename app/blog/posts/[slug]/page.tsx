@@ -4,7 +4,11 @@ import markdownToHtml from "@/app/_lib/markdownToHtml";
 import markdownStyles from "./markdown-styles.module.css";
 import Breadcrumbs from "@/app/_ui/breadcrums";
 import Pagination from "@/app/_ui/pagination";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: 'Blog',
+};
 
 type Params = {
   params: {

@@ -14,6 +14,7 @@ import MyLogo from '@/app/_ui/logo';
 // Depending on the size of the application, this would be stored in a database.
 const links = [
     // { name: 'home', href: '/', icon: null },
+    { name: 'about me', href: '/about', icon: null},
     {
       name: 'blog',
       href: '/blog',
