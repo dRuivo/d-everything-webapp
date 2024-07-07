@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "About Me",
@@ -9,9 +10,13 @@ export default function Page() {
     <main>
       <h1>About Me</h1>
       <p>Hi, I&apos;m dRuivo!</p>
+      {/* TODO: add more of my creative side. Poetry, drawing, photography */}
       <p>I&apos;m a software engineer and a poet.</p>
       <p>My interests are varied and I&apos;m always looking for new things to learn.</p>
       <p>Feel free to explore my blog and my poetry.</p>
+      <p>Thanks for stopping by!</p>
+      <hr />
+      <p>If you're looking for my job experience check my <Link href={"/resume"} >Resume</Link>.</p>
     </main>
   ); 
 }
