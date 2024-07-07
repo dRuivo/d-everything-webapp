@@ -12,8 +12,8 @@ export default function Page() {
 
   return (
     <main className='grid grid-cols-1 justify-items-center'>
-      <h1>Welcome to my Blog!</h1>
-      <section className='space-y-4'>
+      <h2>Welcome to my Blog!</h2>
+      <section className='space-y-4 text-center'>
         <p>Some introductory words.</p>
         <p>This blog serves as a space to showcase my thoughts.</p>
         <p>They may take the form of hardware of software projects, serve to document the mastering of tools or subjects, or be just me blurting out words.</p>

@@ -9,7 +9,7 @@ export default function Page() {
   return (
     <main className="grid grid-cols-1 justify-items-center">
       <div className="w-7/12 justify-center space-y-4">
-        <h1 className="text-center">About Me</h1>
+        <h2 className="text-center">About Me</h2>
         <p>Hi, I&apos;m dRuivo!</p>
         {/* TODO: add more of my creative side. Poetry, drawing, photography */}
         <p>I&apos;m an engineer, a dicoverer, a poet, a maker.</p>

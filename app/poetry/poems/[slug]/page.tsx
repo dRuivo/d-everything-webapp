@@ -50,7 +50,7 @@ export default async function Poem({ params }: Params) {
 
   return (
     <main className="text-center ">
-      <Breadcrumbs
+      {/* <Breadcrumbs
         breadcrumbs={[
           { label: 'Poetry', href: '/poetry' },
           {
@@ -59,7 +59,7 @@ export default async function Poem({ params }: Params) {
               active: true,
           },
         ]}
-      />
+      /> */}
       <h2 className="leading-loose">{poem.title}</h2>
       <div className={clsx(" w-1/2 h-1 mx-auto my-4", color)} />
       <div
