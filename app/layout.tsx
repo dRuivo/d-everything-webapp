@@ -25,7 +25,7 @@ export default function RootLayout({
         <div className="flex-none p-6">
           <NavBar />
         </div>
-        <div className="grow py-6 md:px-36 px-6">
+        <div className="grow py-6 md:px-36 px-6 mb-4">
           {children}
           <SpeedInsights />
         </div>
